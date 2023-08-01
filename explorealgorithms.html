@@ -271,20 +271,31 @@
                 var options = {
                     
                     
+                    
           series: [{
             name: "Cumulative return in %",
             data: [0.4, 5.8, 13.7, 22.8, 25.6, 28.1, 29.2, 30.8]
               
         }],
+                    
           chart: {
-          height: 350,
-          
-          type: 'line',
-          opacity: 0,
-          zoom: {
-            enabled: false
-          }
+              height: 350,
+
+              type: 'line',
+              opacity: 0,
+              zoom: {
+                enabled: false
+              },
+              
+              toolbar: {
+                show: true,
+                tools: {
+                  download: false
+                }
+              }
+              
         },
+                    
         dataLabels: {
           enabled: true,
            background: {
