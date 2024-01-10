@@ -55,28 +55,164 @@
 						<!-- Portfolio -->
 							<article id="portfolio">
 								<h2 class="major">Portfolio</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+                                
+                                <!--------------------------------- Performance chart here ---------------------------->
+                                    
+                            <div id="chart"></div>
+                                        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                                        <script>
+                                        var options = {
+                                  series: [{
+                                    name: "Cumulative return in %",
+                                    data: [0.91, 2.90, 5.73, 7.21, 9.61, 12.00, 17.58, 23.43, 32.32, 35.60, 38.30, 39.52, 40.54, 42.02, 43.15, 44.20, 45.52, 47.22]
+                                      
+
+                                }],
+
+                                  chart: {
+                                      height: 350,
+
+                                      type: 'area',
+                                      opacity: 0,
+                                      zoom: {
+                                        enabled: false
+                                      },
+
+                                      toolbar: {
+                                        show: true,
+                                        tools: {
+                                          download: false
+                                        }
+                                      }
+
+
+                                },
+                                
+                                tooltip:{
+                                    theme: 'dark',
+                                    
+                                
+                                },
+                                            
+                                dataLabels: {
+                                  enabled: false,
+                                   background: {
+                                    enabled: true,
+                                    foreColor: '#fff',
+                                    padding: 1,
+                                    borderRadius: 2,
+                                    borderWidth: 1,
+                                    borderColor: '#fff',
+                                    opacity: 0.9,
+                                    dropShadow: {
+                                      enabled: false,
+                                      top: 1,
+                                      left: 1,
+                                      blur: 1,
+                                      color: '#000',
+                                      opacity: 0.45
+                                    }
+                          },
+                                },
+                                stroke: {
+                                  curve: 'smooth',
+                                    colors: '#FFFFFF'
+                                },
+                                title: {
+                                  text: 'Cumulative return in %',
+                                  align: 'left',
+                                    style: {
+                              color:  '#FFFFFF',
+                                        fontFamily: 'Helvetica',
+
+                            },
+                                },
+                                grid: {
+                                    show: false,
+                                  row: {
+                                    colors: ['#transparent', 'transparent'], // takes an array which will be repeated on columns
+                                    opacity: 0
+                                  },
+                                },
+
+                                yaxis: {
+
+                                 axisBorder: {
+                                  show: true,
+                                fontSize:  '14px',
+                                  color: '#FFFFFF',
+                                  offsetX: 0,
+                                  offsetY: 0
+                              },
+
+                                labels: {
+                                  show: true,
+                                  style: {
+                                      colors: ['#FFFFFF'],
+                                  },
+                              },
+                          },
+
+                                xaxis: {
+                                  categories: ['Jul 22', 'Aug 22', 'Sep 22', 'Oct 22', 'Nov 22', 'Dec 22', 'Jan 23', 'Feb 23', 'Mar 23', 'Apr 23', 'May 23', 'Jun 23', 'Jul 23', 
+                                               'Aug 23', 'Sep 23', 'Oct 23', 'Nov 23', 'Dec 23'],
+
+                                     axisBorder: {
+                                  show: true,
+                                  color: '#FFFFFF',
+                                  fontSize:  '14px',
+                                  offsetX: 0,
+                                  offsetY: 0
+                              },
+
+                                labels: {
+                                  show: true,
+                                  style: {
+                                      colors: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF','#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF' , '#FFFFFF', '#FFFFFF'],
+                                  },
+                              },
+                                }
+
+                                };
+
+                                var chart = new ApexCharts(document.querySelector("#chart"), options);
+                                chart.render();
+
+                                        </script>
+                               
+                                <!---------------------------------- Performance chart ends ------------------------------>
+                                
+                                    <!----<img src="images/pic01.jpg" alt="" />-->
+                                
+                                
+								<p><b>Global Systematic FX</b>
+                                    <li>Directional long-short</li>
+                                    <li>G10 currencies</li>
+                                    <li>Avg. win rate: 82%</li>
+                                    <li>Max. drawdown: 11%</li>
+                                </p>
+                                
                                 
                                 
 							</article>
 
-						<!-- Work -->
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
+								<p>
+                                    We are a team of experienced quantitative traders with a mission to democratize wealth. Using advanced statistical methods and data mining, our proprietary algorithms help institutional and retail traders extract alpha from the markets. 
+                                </p>
+							</article>
+
+                        <!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
-
+                        
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
