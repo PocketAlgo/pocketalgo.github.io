@@ -233,27 +233,27 @@
                                     We are a team of experienced quantitative traders with a mission to democratize wealth. Using advanced statistical methods and data mining, our proprietary algorithms help institutional and retail traders extract alpha from the markets. 
                                 </p>
                                 
-                                <!------------------ Strategy design --------------->
+                                <!------------------ Step 1: Strategy design --------------->
                                 <hr>
                                 <h3 class="icon fa-gem"> Step 1: Strategy design</h3>
                                 <blockquote>
-                                <h4>(A) Discretionary hypotheses validation</h4>
-                                    Discovery of alpha through statistical, probabilistic methods
-                                <br><br>
-                                <h4>(B) Data mining for alpha</h4>
-                                    Discovery of alpha through tick data mining
-                                <p></p>
+                                Alpha discovery via discretionary hypotheses validation & tick data mining
                                 </blockquote>
-                                <!------------------ Strategy design --------------->
                                 
-                                <h3 class="icon fa-gem">Step 2: Algorithm development</h3>
-                                <h4>(1)Discretionary hypotheses validation:</h4>
-                                    Discovery of alpha through statistical, probabilistic methods
-                                <br><br>
-                                <h4>(2)Data mining for alpha</h4>
-                                    Discovery of alpha through tick data mining
-                                <hr>
-
+                                <!------------------ Step 2: Algorithm development --------------->
+                                
+                                <h3 class="icon fa-gem"> Step 2: Algorithm development</h3>
+                                <blockquote>
+                                Broker-agnostic, modularized codebase designed to ensure ease of testing & deployment
+                                </blockquote>
+                                
+                                <!------------------ Step 3: Strategy optimzation --------------->
+                                
+                                <h3 class="icon fa-gem"> Step 3: Strategy optimization</h3>
+                                <blockquote>
+                                Algorithms are put through a rigorous robustness testing process utilizing Monte Carlo simulations, walk-forward analysis & multi-market validation
+                                </blockquote>
+                                
 							</article>
 
                         <!-- Blog -->
@@ -266,7 +266,39 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+                                
+                                <form method="post" action="#" id="form">
+
+                                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                                    <input type="hidden" name="subject" value="New contact form submission from SC website">
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+                                    
+                                    <div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+                                    <div class="h-captcha" data-captcha="true"></div>
+                                        <br>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+                                        
+                                        <button type="submit">Submit Form</button>
+									</ul>
+
+                                </form>
+                                <!----- Original form ------>
+								<!--<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -285,13 +317,19 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+								</form>-->
+                                
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<!--<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
 								</ul>
+                                
+                                <!----- Original form ------>
+                                
+                                <script src="https://web3forms.com/client/script.js" async defer></script>
+                                
 							</article>
 
 						<!-- Elements -->
@@ -486,6 +524,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								<section>
 									<h3 class="major">Form</h3>
+                                    
 									<form method="post" action="#">
 										<div class="fields">
 											<div class="field half">
