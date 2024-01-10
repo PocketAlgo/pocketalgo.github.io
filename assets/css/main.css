@@ -1308,7 +1308,6 @@ g
 			border-bottom-width: 1px;
 			max-width: 100%;
 		}
-
 			#header .content .inner {
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
