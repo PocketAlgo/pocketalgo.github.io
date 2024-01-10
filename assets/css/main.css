@@ -941,7 +941,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #ffffff;
+			border: solid 1px #5A5A5A;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -949,7 +949,7 @@ input, select, textarea {
 			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
-
+g
 		table td {
 			padding: 0.75em 0.75em;
 		}
