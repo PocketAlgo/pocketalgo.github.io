@@ -1,4 +1,4 @@
-
+<div id="chart"></div>
                 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
                 <script>
                 
