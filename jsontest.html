@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr {
+            background-color: lightGrey;
+        }
+        
+        tr:nth-child(2n) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <table></table>
+    <script>
+        fetch('https://script.googleusercontent.com/macros/echo?user_content_key=I-8yQkTMoQpRmXz8daxDmsW1QZXeZiQyfEWJocwDhWF0WVD6JVl_bc_9-e80tKvoCn77es9FbKoW4ujRQCIluivxTNf_v_9QOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHa2v57k_UgK8FrT3NAZEQDL8_CK6KxZBb7uENlcqc2rvQ7T-QkqdNsPii2iaYDZvBjzSRMKkFKnzqswSDRXKBJV9POg-eBFP-NQtBHn44AOQP9fnK6RNm5-Q&lib=M-jxYp42KCTQam1xanIRKiNagCCj8MHnP')
+            .then(res => res.json())
+            .then(data => {
+                let tr = data.content.reduce((prev, cur) => {
+                    let td = cur.map(e => `<td>${e}</td>`)
+                    return prev + `<tr>${td.join("")}</tr>`
+                }, "\r")
+                document.querySelector("table").innerHTML = tr;
+                
+            });
+    </script>
+    
+    
+<iframe 
+  width="100%" 
+  height="1000px" 
+  title="Tiny little Google Apps Script Web App" 
+  src="https://script.google.com/macros/s/AKfycbwNI4bLjwk4jZgjNy4R9OtwZOdGgI_9iz6L1zdTcR5gujRJoBEVszaIbhKxAhgaWH-Z4w/exec" 
+  frameborder="0" 
+  scrolling="no">
+</iframe>
+    
+</body>
+
+</html>
